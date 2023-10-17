@@ -1,0 +1,12 @@
+img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    background-color: white;
+}
+.text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    width: calc(100% - 150px);  
+}

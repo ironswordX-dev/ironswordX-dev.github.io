@@ -1,0 +1,25 @@
+body {
+  background-color: #000000;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+@keyframes flyInTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.flyInTop {
+  animation: flyInTop 1s ease-in-out;
+}
