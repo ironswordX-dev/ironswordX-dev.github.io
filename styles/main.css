@@ -23,3 +23,10 @@ h2 {
 .flyInTop {
   animation: flyInTop 1s ease-in-out;
 }
+
+#jekyll {
+  background-color: grey;
+}
+#jekyll img {
+  background: none;
+}
