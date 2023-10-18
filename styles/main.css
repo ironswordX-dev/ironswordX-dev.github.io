@@ -26,6 +26,8 @@ h2 {
 
 #jekyll {
   background-color: grey;
+  text-align: center;
+  width: 65px;
 }
 #jekyll img {
   background: none;
