@@ -29,4 +29,6 @@ h2 {
 }
 #jekyll img {
   background: none;
+  width: 150px;
+  height: 61.25px;
 }
