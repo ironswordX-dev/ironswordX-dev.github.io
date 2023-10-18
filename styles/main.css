@@ -25,12 +25,14 @@ h2 {
 }
 
 #jekyll {
-  background-color: grey;
-  text-align: center;
-  width: 65px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
 }
+
 #jekyll img {
-  background: none;
-  width: 75px;
-  height: 30.625px;
+  width: 30px;
+  margin-right: 10px;
 }
