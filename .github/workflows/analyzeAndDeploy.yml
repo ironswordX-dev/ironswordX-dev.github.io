@@ -90,6 +90,7 @@ jobs:
       with:
         category: "/language:${{matrix.language}}"
   build:
+    needs: analyze
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
