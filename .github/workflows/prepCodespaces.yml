@@ -1,0 +1,17 @@
+name: Prep Codespaces
+
+on:
+  #push:
+  #  branches: [ main ]
+  workflow_run:
+    workflows: ["CodeQL Scan & Jekyll Deployment"]
+    types:
+      - completed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.name == 'CodeQL Scan & Jekyll Deployment' && github.event.workflow_run.jobs.analyze.conclusion == 'success' }}
+    steps:
+      - uses: actions/checkout@v2
+      - run: prebuild --all
