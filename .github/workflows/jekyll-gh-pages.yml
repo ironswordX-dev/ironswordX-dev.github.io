@@ -4,7 +4,7 @@ name: Site of ironswordX-dev (Jekyll)
 # on: push
 on:
   workflow_run:
-    workflows: ["code-analyze"]
+    workflows: ["CodeQL"]
     types:
       - completed
 
