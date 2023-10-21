@@ -112,6 +112,9 @@ jobs:
     needs: [analyze, eslint]
     runs-on: ubuntu-latest
     steps:
+      - name: Install Gems
+        run: |
+          bundle install
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Pages
