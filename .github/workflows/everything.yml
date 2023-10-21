@@ -140,13 +140,14 @@ jobs:
         uses: ruby/setup-ruby@55283cc23133118229fd3f97f9336ee23a179fcf # v1.146.0
         with:
           ruby-version: ${{ matrix.ruby-version }}
-          bundler-cache: false # (keep false rn, dont wanna fuck shit up) runs 'bundle install' and caches installed gems automatically
+          bundler-cache: false # (keep false rn, change later) runs 'bundle install' and caches installed gems automatically
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install Gems
         run: |
+          dir
           bundle config set --local path ./
-          gem install jekyll-browserify
+          gem install jekyll-browserify --install-dir ./
           bundle
           bundle install
       - name: Setup Pages
