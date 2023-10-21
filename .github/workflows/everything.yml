@@ -114,7 +114,8 @@ jobs:
     steps:
       - name: Install Gems
         run: |
-          apt install bundle
+          apt install ruby-full
+          echo "y"
           bundle
           bundle install
       - name: Checkout
