@@ -3,3 +3,4 @@ assets/*
 styles/*
 eslint-results.sarif
 _config.yml
+.eslintrc.js
