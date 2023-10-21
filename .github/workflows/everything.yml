@@ -146,10 +146,8 @@ jobs:
       - name: Install Gems
         run: |
           ls ./
-          bundle config set --local path ./
           gem install jekyll-browserify --install-dir ./
-          bundle
-          bundle install
+          bundle install --path ./
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
