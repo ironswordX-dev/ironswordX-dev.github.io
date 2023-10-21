@@ -114,6 +114,8 @@ jobs:
     steps:
       - name: Install Gems
         run: |
+          apt install bundle
+          bundle
           bundle install
       - name: Checkout
         uses: actions/checkout@v3
