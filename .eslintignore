@@ -1,0 +1,5 @@
+old-workflows/*.yml
+assets/*
+styles/*
+eslint-results.sarif
+_config.yml
