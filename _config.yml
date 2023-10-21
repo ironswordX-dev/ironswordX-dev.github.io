@@ -1,5 +1,5 @@
 include: ['.well-known']
-exclude: ['old-workflows', '.github']
+exclude: ['old-workflows', '.github', '.eslintrc.js', 'eslint-results.sarif']
 defaults:
 - scope:
     path: "assets"
