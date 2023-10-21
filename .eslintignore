@@ -4,3 +4,6 @@ styles/*
 eslint-results.sarif
 _config.yml
 .eslintrc.js
+node_modules/**/*
+package.json
+package-lock.json
