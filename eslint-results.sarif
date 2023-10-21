@@ -2,7 +2,9 @@
   "version": "2.1.0",
   "runs": [{
     "tool": {
-      "driver": {}
+      "driver": {
+        "name": "idk"
+      }
     }
   }]
 }
