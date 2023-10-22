@@ -81,7 +81,7 @@ jobs:
   eslint:
     name: Run eslint scanning
     needs: [analyze]
-    runs-on: ${{ needs.analyse.runner.os }} # ubuntu-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       security-events: write
@@ -128,7 +128,7 @@ jobs:
 #      run: bundle exec rake
   build:
     needs: [eslint]
-    runs-on: ${{ needs.eslint.runner.os }} # ubuntu-latest
+    runs-on: ubuntu-latest #${{ needs.eslint.runner.os }} 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
