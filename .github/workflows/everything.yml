@@ -144,7 +144,7 @@ jobs:
     - name: Build
       run: |
         npm install browserify --save-dev
-        npx browserify -r ./node_modules/ -o ./dist/[name].bundle.js
+        npx browserify -r ./node_modules/**/ -o ./dist/[name].bundle.js
   build:
     needs: [eslint, webpack]
     runs-on: ${{ needs.webpack.runner.os }} # ubuntu-latest
