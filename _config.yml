@@ -1,5 +1,11 @@
-include: ['.well-known']
-exclude: ['node-modules', 'old-workflows', '.github', '.eslintrc.js', 'eslint-results.sarif']
+include: 
+- .well-known
+exclude: 
+- node_modules 
+- old-workflows
+- .github 
+- .eslintrc.js
+- eslint-results.sarif
 defaults:
 - scope:
     path: "assets"
