@@ -144,6 +144,7 @@ jobs:
       - name: Build Web Modules
         run: |
           npm install
+          npm install -D webpack
           npm install -D webpack-cli
           npx webpack
       - name: Build with Jekyll
