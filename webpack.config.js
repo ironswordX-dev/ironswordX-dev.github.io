@@ -6,9 +6,10 @@ module.exports = {
   entry: {
     app: './src/index.js',
     ...glob.sync('./node_modules/**/package.json').reduce((acc, path) => {
-      const packageName = JSON.parse(fs.readFileSync(path)).name;
-      const packageMain = JSON.parse(fs.readFileSync(path)).main;
-      acc[packageName] = `/node_modules/${packageName}/${packageMain}`;
+      const package = JSON.parse(fs.readFileSync(path));
+      const packageName = package.name;
+      const packageMain = package.main;
+      acc[packageName] = `./node_modules/${packageName}/${packageMain}`;
       return acc;
     }, {}),
   },
